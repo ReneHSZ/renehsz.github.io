@@ -2,7 +2,41 @@
 <html>
 	<head>
 		<meta name="charset" content="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta http-equiv="refresh" content="0; url=https://renehsz.com">
+
 		<title>ReneHSZ &mdash; Github.io</title>
+
+		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+
+				text-rendering: optimizeSpeed !important;
+			}
+
+			h1 {
+				margin: 0;
+				padding: 4%;
+				width: 100%;
+
+				font-family: Arial, Helvetica, sans-serif;
+
+				background: #333;
+				color: #FFF;
+			}
+
+			h2 {
+				font-family: 'Courier New', Courier, monospace;
+				padding: 2%;
+			}
+
+			p {
+				font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+				padding: 2%;
+			}
+		</style>
 	</head>
 	<body>
 		<h1>ReneHSZ &mdash; Github.io</h1>
@@ -11,6 +45,16 @@
 
 		<script type="text/javascript">
 			window.location.href = "https://renehsz.com";
+		</script>
+
+		<script type="text/javascript">
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/sw.js').then(reg => {
+					console.log('ServiceWorker registered: ', reg);
+				}, err => {
+					console.error('ServiceWorker registration failed: ', err);
+				});
+			}
 		</script>
 	</body>
 </html>
