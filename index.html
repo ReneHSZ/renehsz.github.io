@@ -44,10 +44,6 @@
 		<p>You should get redirected. Otherwise click on the link above.</p>
 
 		<script type="text/javascript">
-			window.location.href = "https://renehsz.com";
-		</script>
-
-		<script type="text/javascript">
 			if ('serviceWorker' in navigator) {
 				navigator.serviceWorker.register('/sw.js').then(reg => {
 					console.log('ServiceWorker registered: ', reg);
@@ -55,6 +51,10 @@
 					console.error('ServiceWorker registration failed: ', err);
 				});
 			}
+		</script>
+
+		<script type="text/javascript">
+			window.location.href = "https://renehsz.com";
 		</script>
 	</body>
 </html>
